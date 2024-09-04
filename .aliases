@@ -1,7 +1,7 @@
 # Lazygit
 alias lg='lazygit'
 # [o]pen [f]ile: open anything, using rifle as the opener
-alias of='fd . ~ --type f --hidden --follow --exclude .git | fzf | xargs rifle'
+alias of='fd . ~ --type f --hidden --exclude .git | fzf | xargs rifle'
 
 # TODO: not working. [o]pen [d]irectory in shell: thanks gemini..?
 #alias od='fd . "/home/reed" --type d --hidden --follow --exclude .git | fzf | xargs zsh -c "cd" -'
