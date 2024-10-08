@@ -1,3 +1,5 @@
+# debugging
+alias home='cd ~'
 # Lazygit
 alias lg='lazygit'
 # [f]ile [o]pen: open anything, using rifle as the opener
@@ -18,3 +20,9 @@ alias nrm='sudo rm -r'
 alias cl='clear'
 # make dir (all non-existent directories in the specified path)
 alias md='mkdir -p'
+
+name=$(uname)
+if [[ $uname == "Linux" ]]; then
+  echo "fdfind is aliased to fd"
+  alias fd='fdfind'
+fi
